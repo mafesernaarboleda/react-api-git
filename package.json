@@ -13,7 +13,11 @@
     "predeploy": "npm run build",
     "deploy": "gh-pages -d build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "percy": "react-percy"
   },
-  "homepage": "https://mafesernaarboleda.github.io/profilepage"
+  "homepage": "https://mafesernaarboleda.github.io/profilepage",
+  "devDependencies": {
+    "@percy/react": "^0.4.0"
+  }
 }
