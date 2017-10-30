@@ -15,5 +15,5 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"
   },
-  "homepage": "https://mafesernaarboleda.github.io/my-app"
+  "homepage": "https://mafesernaarboleda.github.io/profilepage"
 }
