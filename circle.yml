@@ -15,4 +15,4 @@ deployment:
   development:
     branch: master
     commands:
-      - npm run deploy
+      - /home/ubuntu/profilepage/scripts/deploy-ghpages.sh build
