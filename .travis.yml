@@ -12,6 +12,7 @@ cache:
     - node_modules
 script:
   - npm test
+  - npm run build
 deploy:
   provider: pages
   skip_cleanup: true
