@@ -1,0 +1,19 @@
+machine:
+  timezone: America/New_York
+  node:
+   version: 6.11.0
+
+dependencies:
+  override:
+    - npm install
+
+test:
+  override:
+    - npm test
+
+deployment:
+  development:
+    branch: master
+    commands:
+      - npm run build
+      - aws s3 sync /home/ubuntu/profilepage/build s3://tallermdjs/ --delete  --acl public-read
