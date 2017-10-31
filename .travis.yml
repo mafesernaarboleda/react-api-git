@@ -14,10 +14,9 @@ script:
   - npm test
   - npm run build
 deploy:
-  provider: s3
-  access_key_id: $ACCESS
-  secret_access_key:  $SECRET
-  bucket: "tallermdjs"
+  provider: pages
   skip_cleanup: true
   local_dir: build
-  acl: public_read
+  github_token: $GITHUB_TOKEN
+  on:
+    branch: master
