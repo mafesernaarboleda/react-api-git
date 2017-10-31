@@ -15,5 +15,4 @@ deployment:
   development:
     branch: master
     commands:
-      - npm run build
-      - aws s3 sync /home/ubuntu/profilepage/build s3://tallermdjs/ --delete  --acl public-read
+      - npm run deploy
