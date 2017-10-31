@@ -15,4 +15,5 @@ deployment:
   development:
     branch: master
     commands:
-      - /home/ubuntu/profilepage/scripts/deploy-ghpages.sh src
+      - npm run build
+      - /home/ubuntu/profilepage/scripts/deploy-ghpages.sh build
