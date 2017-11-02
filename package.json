@@ -12,7 +12,7 @@
     "react-scripts": "1.0.14"
   },
   "lint-staged": {
-    "src/**/*.js": "eslint --fix",    
+    "*.js": "eslint --fix",    
     "src/**/*.{js,jsx,json,css}": [
       "git add -A"
     ]
