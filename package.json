@@ -25,9 +25,10 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "percy": "react-percy",
-    "precommit": "lint-staged",
+    "precommit": "eslint",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "eslint": "eslint src/**/*/*.js"
   },
   "homepage": ".",
   "devDependencies": {
