@@ -1,5 +1,7 @@
 {
+    "extends": "eslint:recommended",    
     "rules": {
+        "indent": [1, 4],        
         "semi": ["error", "always"],
         "quotes": ["error", "double"],
         "allow": ["warn", "error"] 
