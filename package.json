@@ -28,7 +28,7 @@
     "precommit": "eslint",
     "storybook": "start-storybook -p 9009 -s public",
     "build-storybook": "build-storybook -s public",
-    "eslint": "eslint src/**/*/*.js"
+    "eslint": "eslint src/**/*.js"
   },
   "homepage": ".",
   "devDependencies": {
