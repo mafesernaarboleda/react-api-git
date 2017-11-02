@@ -12,10 +12,9 @@
     "react-scripts": "1.0.14"
   },
   "lint-staged": {
-    "src/**/*.js": "eslint",
     "src/**/*.{js,jsx,json,css}": [
-      "prettier --single-quote --write --no-bracket-spacing",      
-      "git add -A"
+      "prettier --single-quote --write --no-bracket-spacing",
+      "git add"
     ]
   },
   "scripts": {
@@ -35,7 +34,6 @@
     "@percy/react": "^0.4.0",
     "@storybook/addon-actions": "^3.2.14",
     "@storybook/addon-links": "^3.2.14",
-    "@storybook/react": "^3.2.14",
-    "eslint": "^4.10.0"
+    "@storybook/react": "^3.2.14"
   }
 }
