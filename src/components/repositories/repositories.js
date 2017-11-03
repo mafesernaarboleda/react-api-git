@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, {Component} from 'react';
 
 class Repositories extends Component {
   repositoriesByUser = [];
@@ -8,7 +8,7 @@ class Repositories extends Component {
 
   componentWillMount() {
     const {getListReposByUser} = this.props;
-    getListReposByUser('mafesernaarboleda');
+    getListReposByUser('khriztianmoreno');
   }
 
   componentWillReceiveProps(nextProps) {
