@@ -16,12 +16,6 @@
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.1.0"
   },
-  "lint-staged": {
-    "src/**/*.{js,jsx,json,css}": [
-      "prettier --write",
-      "git add"
-    ]
-  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
