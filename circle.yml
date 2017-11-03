@@ -13,7 +13,7 @@ test:
 
 deployment:
   development:
-    branch: master
+    branch: circleb
     commands:
       - npm run build
-      - /home/ubuntu/profilepage/scripts/deploy-ghpages.sh build
+      - aws s3 sync /home/ubuntu/profilepage/build s3://staging-challenge/ --delete  --acl public-read
