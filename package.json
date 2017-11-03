@@ -6,8 +6,6 @@
     "bootstrap": "^3.3.7",
     "font-awesome": "^4.7.0",
     "gh-pages": "^1.0.0",
-    "husky": "^0.14.3",
-    "lint-staged": "^4.3.0",
     "react": "^15.0.1",
     "react-dom": "^15.0.1",
     "react-redux": "^4.4.6",
