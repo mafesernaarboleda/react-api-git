@@ -3,18 +3,22 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "bootstrap": "^3.3.7",
+    "font-awesome": "^4.7.0",
     "gh-pages": "^1.0.0",
     "husky": "^0.14.3",
     "lint-staged": "^4.3.0",
-    "prettier": "^1.7.4",
-    "react": "^16.0.0",
-    "react-dom": "^16.0.0",
-    "react-scripts": "1.0.14"
+    "react": "^15.0.1",
+    "react-dom": "^15.0.1",
+    "react-redux": "^4.4.6",
+    "react-scripts": "1.0.14",
+    "redux": "^3.6.0",
+    "redux-logger": "^2.7.4",
+    "redux-thunk": "^2.1.0"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
-      "eslint --fix",
-      "prettier --single-quote --write --no-bracket-spacing",      
+      "prettier --write",
       "git add"
     ]
   },
@@ -27,15 +31,30 @@
     "eject": "react-scripts eject",
     "percy": "react-percy",
     "precommit": "lint-staged",
+    "coverage": "npm test -- --coverage && http-server -c-1 -o -p 9875 ./coverage",
     "storybook": "start-storybook -p 9009 -s public",
-    "build-storybook": "build-storybook -s public"
+    "build-storybook": "build-storybook -s public",
+    "snapshot": "build-storybook && percy-storybook --widths=320,1280"
   },
   "homepage": ".",
   "devDependencies": {
+    "@percy-io/react-percy-storybook": "^0.1.12",
     "@percy/react": "^0.4.0",
     "@storybook/addon-actions": "^3.2.14",
     "@storybook/addon-links": "^3.2.14",
+    "@storybook/cli": "^3.2.14",
     "@storybook/react": "^3.2.14",
-    "eslint": "^4.10.0"
+    "enzyme": "^3.1.0",
+    "enzyme-adapter-react-16": "^1.0.3",
+    "eslint": "^4.10.0",
+    "expect": "^21.2.1",
+    "fetch-mock": "^5.13.1",
+    "jest": "^21.2.1",
+    "jest-cli": "^20.0.4",
+    "prettier": "^1.7.4",
+    "react-addons-test-utils": "^15.6.2",
+    "react-test-renderer": "^16.0.0",
+    "redux-mock-store": "^1.3.0",
+    "redux-testkit": "^1.0.6"
   }
 }
