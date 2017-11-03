@@ -1,5 +1,4 @@
 import React, {Component} from 'react';
-import logo from './logo.svg';
 import ProfileContainer from './components/profile';
 import RepositoriesContainer from './components/repositories';
 
