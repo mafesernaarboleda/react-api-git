@@ -31,6 +31,7 @@ class Profile extends Component {
         </div>
         <div className="row">
           <h1 className="personalName">{this.user.name}</h1>
+          <h1 className="personalName">Saludo, como estan?????</h1>
           <p>{this.user.bio}</p>
           <label>{this.user.email}</label>
         </div>

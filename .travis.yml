@@ -10,3 +10,10 @@ before_install:
 script:
   - npm run test
   - npm run build
+deploy:
+ provider: pages
+ skip_cleanup: true
+ local_dir: build
+ github_token: $GITHUB_TOKEN
+ on:
+  branch: workshopb
