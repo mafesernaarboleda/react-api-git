@@ -16,4 +16,4 @@ deployment:
     branch: circleb
     commands:
       - npm run build
-      - aws s3 sync /home/ubuntu/profilepage/build s3://staging-challenge/ --delete  --acl public-read
+      - aws s3 sync /home/ubuntu/profilepage/build s3://tallermdjs/ --delete  --acl public-read
