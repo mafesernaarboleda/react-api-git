@@ -8,7 +8,7 @@ class Repositories extends Component {
 
   componentWillMount() {
     const {getListReposByUser} = this.props;
-    getListReposByUser("mafesernaarboleda");
+    getListReposByUser('mafesernaarboleda');
   }
 
   componentWillReceiveProps(nextProps) {
