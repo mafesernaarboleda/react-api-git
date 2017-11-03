@@ -14,6 +14,13 @@
     "redux-logger": "^2.7.4",
     "redux-thunk": "^2.1.0"
   },
+  "lint-staged": {
+    "src/**/*.{js,jsx,json,css}": [
+      "prettier --write",
+      "eslint --fix",
+      "git add"
+    ]
+  },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
@@ -33,8 +40,11 @@
     "enzyme-adapter-react-16": "^1.0.3",
     "expect": "^21.2.1",
     "fetch-mock": "^5.13.1",
+    "husky": "^0.14.3",
     "jest": "^21.2.1",
     "jest-cli": "^20.0.4",
+    "lint-staged": "^4.3.0",
+    "prettier": "^1.7.4",
     "react-addons-test-utils": "^15.6.2",
     "react-test-renderer": "^16.0.0",
     "redux-mock-store": "^1.3.0",

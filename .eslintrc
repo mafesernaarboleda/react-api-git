@@ -1,0 +1,12 @@
+{
+    "extends": "eslint:recommended", 
+    "parserOptions": { 
+        "ecmaVersion": 6,
+        "sourceType": "module"
+    },
+    "rules": {
+        "indent": [1, 4],        
+        "semi": ["error", "always"],
+        "allow": ["warn", "error"] 
+    }
+}
