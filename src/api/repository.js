@@ -7,7 +7,7 @@ const getListReposByUser = userName => {
     method: 'GET',
     headers: {
       Accept: 'application/json',
-      Authorization: 'token 147e4b456bef061205493f4847f25c7570ee7f2c',
+      Authorization: 'token 43a765f87a4f2fd4e09c20f45f0834949f1bb17b',
     },
   });
 };

@@ -1,10 +1,10 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 class Profile extends Component {
   user = {};
 
   constructor(props) {
-    super(props);
+    super();
   }
 
   componentWillMount() {
@@ -38,10 +38,5 @@ class Profile extends Component {
     );
   }
 }
-
-Profile.propTypes = {
-  getUser: PropTypes.func.isRequired,
-  apiError: PropTypes.string.isRequired,
-};
 
 export default Profile;

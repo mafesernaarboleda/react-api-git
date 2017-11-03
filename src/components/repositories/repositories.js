@@ -1,9 +1,9 @@
-import React, {Component, PropTypes} from 'react';
+import React, {Component} from 'react';
 
 class Repositories extends Component {
   repositoriesByUser = [];
   constructor(props) {
-    super(props);
+    super();
   }
 
   componentWillMount() {
@@ -92,10 +92,5 @@ class Repositories extends Component {
     );
   }
 }
-
-Repositories.propTypes = {
-  getListReposByUser: PropTypes.func.isRequired,
-  apiError: PropTypes.string.isRequired,
-};
 
 export default Repositories;
